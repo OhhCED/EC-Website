@@ -4,28 +4,34 @@
 	<link rel="stylesheet" href="style.css">
 	<h1>Virus 101</h1>
 </head>
+<?php
 <body>
-	<table align="center" width="685" border="1">
+if(!isset($_GET['user']) || !isset($_GET['password'])){
+	echo "	<table align=center width=685 border=1>
 				<tbody>
-					<tr align="center">
-						<td class="temp">Temp</td>
+					<tr align=center>
+						<td class=temp>Temp</td>
 					</tr>
-					<tr align="center">
-						<td class="temp2">Temp</td>
+					<tr align=center>
+						<td class=temp2>Temp</td>
 					</tr>
-					<tr align="center">
-						<td class="temp3">Temp</td>
+					<tr align=center>
+						<td class=temp3>Temp</td>
 					</tr>
 				</tbody>
 			</table>
-			<form align="center" action="" method="GET">
+			<form align=center action=".$_PHP_SELF." method=GET>
 				<br>
-				<input type="text" name="user" placeholder="Username">
+				<input type=text name=user placeholder=Username>
 				<br>
-				<input type="password" name="password" placeholder="Password">
+				<input type=password name=password placeholder=Password>
 				<br>
 				<br>
-				<input type="submit" value="Submit">
-			</form></body>
+				<input type=submit value=Submit>
+			</form>";
+}else{
+		echo "	<p align=center style=color:blue>Success!</p>";
+}
+</body>
 </html>
 
