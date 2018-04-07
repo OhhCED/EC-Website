@@ -6,27 +6,27 @@
 <?php
 if(!isset($_GET['user']) || !isset($_GET['password'])){
         echo "  <table align=\"center\" width=\"685\" border=\"1\">
-                                <tbody>
-                                        <tr align=\"center\">
-                                                <td class=\"aerial\">Aerial Photography</td>
-                                        </tr>
-                                        <tr align=\"center\">
-                                                <td class=\"computer\">In House Tech</td>
-                                        </tr>
-                                        <tr align=\"center\">
-                                                <td class=\"dj\">RadioActive Entertainment</td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                        <form align=\"center\" action=\"".$_PHP_SELF."\" method=\"GET\">
-                                <br>
-                                <input type=\"text\" name=\"user\" placeholder=\"Username\">
-                                <br>
-                                <input type=\"password\" name=\"password\" placeholder=\"Password\">
-                                <br>
-                                <br>
-                                <input type=\"submit\" value=\"Submit\">
-                        </form>";
+                    <tbody>
+                        <tr align=\"center\">
+                            <td class=\"aerial\">Aerial Photography</td>
+                        </tr>
+                        <tr align=\"center\">
+                            <td class=\"computer\">In House Tech</td>
+                        </tr>
+                        <tr align=\"center\">
+                            <td class=\"dj\">RadioActive Entertainment</td>
+                        </tr>
+                    </tbody>
+                </table>
+				<form align=\"center\" action=\"".$_PHP_SELF."\" method=\"GET\">
+					<br>
+						<input type=\"text\" name=\"user\" placeholder=\"Username\">
+                    <br>
+                        <input type=\"password\" name=\"password\" placeholder=\"Password\">
+                    <br>
+                    <br>
+                        <input type=\"submit\" value=\"Submit\">
+                </form>";
 }else{
         if(($_GET['user']=Zed) && ($_GET['password']=zedpass)){
                 echo "  <p align=\"center\" style=\"color:blue\">Success</p>";
